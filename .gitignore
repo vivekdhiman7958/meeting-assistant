@@ -1,0 +1,25 @@
+# dependencies and builds
+node_modules
+dist
+.venv
+__pycache__
+
+# secrets: never commit these
+.env
+.env.*
+!.env.example
+
+# runtime data: database and uploaded audio
+apps/api/data
+
+# audio files used for testing
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.webm
+
+# misc
+*.log
+.DS_Store

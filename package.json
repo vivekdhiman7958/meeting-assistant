@@ -1,0 +1,14 @@
+{
+    "name": "meeting-assistant",
+    "private": true,
+    "workspaces": ["apps/*", "packages/*"],
+    "scripts": {
+        "dev:api": "bun --filter @ma/api dev",
+        "dev:web": "bun --filter @ma/web dev",
+        "typecheck": "bun --filter '*' typecheck"
+    },
+    "devDependencies": {
+        "bun-types": "^1.4.2",
+        "typescript": "^7.0.2"
+    }
+}

@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+python-multipart
+faster-whisper
+av<16
+pyannote.audio
