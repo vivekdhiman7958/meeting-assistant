@@ -201,4 +201,4 @@ All `/recordings` routes require `Authorization: Bearer <token>` and only ever r
 
 ## License
 
-Add a license of your choice (for example MIT) before sharing the code widely.
+Released under the [MIT License](LICENSE).
