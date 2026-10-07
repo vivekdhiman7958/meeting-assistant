@@ -149,7 +149,8 @@ WHISPER_MODEL=base MAX_AUDIO_SECONDS=180 uvicorn main:app --port 8000
 |---|---|---|---|
 | `JWT_SECRET` | API | required | Signs login tokens (32+ chars) |
 | `LLM_API_KEY` | API | required | LLM provider key |
-| `LLM_MODEL` | API | `llama-3.3-70b-versatile` | Chat model name |
+| `LLM_REFINE_MODEL` | API | `openai/gpt-oss-20b` | Model used to refine the Transcript |
+| `LLM_MINUTES_MODEL` | API | `openai/gpt-oss-120b` | Model used for summarize the Transcript |
 | `LLM_BASE_URL` | API | Groq OpenAI-compatible URL | Swap providers |
 | `ML_URL` | API | `http://localhost:8000` | Where the ML service runs |
 | `WEB_ORIGIN` | API | `http://localhost:5173` | Allowed web origin (CORS) |
