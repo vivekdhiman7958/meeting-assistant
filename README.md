@@ -104,7 +104,8 @@ Copy `apps/api/.env.example` to `apps/api/.env` and fill it in:
 ```
 JWT_SECRET=<a random string, 32+ characters>
 LLM_API_KEY=<your provider key>
-LLM_MODEL=openai/gpt-oss-120b
+LLM_REFINE_MODEL=openai/gpt-oss-20b
+LLM_MINUTES_MODEL=openai/gpt-oss-120b
 ```
 
 Generate a secret with `bun -e 'console.log(crypto.randomUUID()+crypto.randomUUID())'`. The database and its tables are created automatically on first start.
